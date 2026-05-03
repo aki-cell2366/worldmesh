@@ -8,7 +8,10 @@
 #
 # Julia functions to calculate the world grid square code.
 # The world grid square code computed by this library 
-# is compatible to JIS X 0410.
+# is compatible to Japanese grid square code (JIS X 0410). 
+#
+# This library for World grid square code complies ISO 24108-1:
+# https://www.iso.org/standard/87706.html
 #
 # Ported from R to Julia by Cline (03 May 2026)
 # Original R version:
