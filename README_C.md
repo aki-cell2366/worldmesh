@@ -84,7 +84,7 @@ int main(void) {
 gcc -o myapp myapp.c libworldmesh.a -lm
 ```
 
-## API Reference
+## Reference
 
 ### Data Structures
 
