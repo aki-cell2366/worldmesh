@@ -8,8 +8,11 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 # PHP fnctions to calculate the world grid square code.
-# The world grid square code computed by this library is
-# compatible to JIS X 0410
+# The world grid square code computed by this library 
+# is compatible to Japanese grid square code (JIS X 0410). 
+#
+# This library for World grid square code complies ISO 24108-1:
+# https://www.iso.org/standard/87706.html
 #
 # Version 1.0: Released on 07 February 2017
 # Version 1.6: Released on 09 October 2020
