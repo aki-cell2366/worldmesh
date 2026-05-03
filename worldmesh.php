@@ -9,7 +9,7 @@
 #
 # PHP fnctions to calculate the world grid square code.
 # The world grid square code computed by this library is
-# compatible to JIS X0410
+# compatible to JIS X 0410
 #
 # Version 1.0: Released on 07 February 2017
 # Version 1.6: Released on 09 October 2020
