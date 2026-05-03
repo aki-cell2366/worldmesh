@@ -12,7 +12,7 @@ This library provides functions to:
 
 ## Features
 
-- **Multiple resolution levels**: 8, 10, 12, 13, 14, 16-digit grid square codes
+- **Multiple resolution levels**: 6, 8, 10, 12, 13, 14, 16-digit grid square codes
 - **Extended high-resolution codes**: 100m, 50m, 10m, 1m precision variants
 - **WGS84 ellipsoid support**: Accurate geodesic calculations using Vincenty's formulae
 - **Robust error handling**: Input validation and boundary condition checking
@@ -120,7 +120,7 @@ WorldMesh_Grid* meshcode_to_latlong_grid(const char *meshcode, int extension,
 Convert mesh code to grid square boundaries. Returns pointer to `out` on success, NULL on failure.
 
 **Parameters:**
-- `meshcode`: String of 8, 10, 11, 12, 13, 14, or 16 digits
+- `meshcode`: String of 6, 8, 10, 11, 12, 13, 14, or 16 digits
 - `extension`: 1 for extended high-resolution codes, 0 for standard codes
 - `spec`: Specification for extended codes:
   - `"ex100m_13"` - 100m resolution (13 digits)
@@ -230,25 +230,6 @@ ABBBBBCCDDEFG...
 | 12 | 250m | 7.5 arc-sec × 11.25 arc-sec |
 | 13 | 125m | 3.75 arc-sec × 5.625 arc-sec |
 | 12-16 | 100m-1m | Extended high-resolution variants |
-
-## Testing
-
-Compile and run the test suite:
-
-```bash
-gcc -std=c99 -Wall -Wextra worldmesh_test.c worldmesh.o -o worldmesh_test -lm
-./worldmesh_test
-```
-
-The test suite covers:
-- Input validation and boundary conditions
-- Coordinate to meshcode conversion at all levels
-- Meshcode to coordinate conversion
-- Round-trip conversions (coordinate → code → coordinate)
-- Area calculations
-- Geodesic distance calculations
-- Invalid input handling
-- Extended high-resolution codes
 
 ## Performance Characteristics
 
