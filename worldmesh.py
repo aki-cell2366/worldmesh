@@ -8,7 +8,7 @@
 #
 # Python functions to calculate the world grid square code.
 # The world grid square code computed by this library
-# is compatible to JISX0410.
+# is compatible to JIS X 0410.
 #
 # Release notes
 # Version 1.0 : Released on 4 April 2017
