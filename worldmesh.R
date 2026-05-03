@@ -8,8 +8,11 @@
 #
 # R functions to calculate the world grid square code.
 # The world grid square code computed by this library 
-# is compatible to JISX0410.
+# is compatible to Japanese grid square code (JIS X 0410). 
 #
+# This library for World grid square code complies ISO 24108-1:
+# https://www.iso.org/standard/87706.html
+# 
 # Release notes
 # Version 1.0 : Released on 02 June 2015
 # Version 1.1 : Released on 09 July 2015
